@@ -1,0 +1,56 @@
+const student = {
+  name: 'student',
+  title: 'Students',
+  type: 'document',
+  fields: [
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Ramiro', value: 'Ramiro'},
+          {title: 'María Mónica', value: 'Maria'},
+          {title: 'Nicolás Rivera', value: 'Nicolas_Rivera'},
+          {title: 'Nicolás Miró', value: 'Nicolas_Miro'},
+          {title: 'Esther', value: 'Esther'},
+          {title: 'Angel', value: 'Angel'},
+          {title: 'Isabella García', value: 'Isabella_Garcia'},
+          {title: 'Lorenzo', value: 'Lorenzo'},
+          {title: 'Maximiliano', value: 'Maximiliano'},
+          {title: 'Juan Camilo', value: 'Juan_Camilo'},
+          {title: 'Martín Rosero', value: 'Martin_Rosero'},
+          {title: 'Majo', value: 'Majo'},
+          {title: 'Lorena', value: 'Lorena'},
+          {title: 'Martín Yañez', value: 'Martin_Yañez'},
+          {title: 'Jerónimo', value: 'Jeronimo'},
+          {title: 'Isabella Rincón', value: 'Isabella_Rincon'},
+          {title: 'Natalia', value: 'Natalia'},
+          {title: 'Samuel', value: 'Samuel'},
+          {title: 'Juan Pablo', value: 'Juan_Pablo'},
+        ],
+      },
+    },
+    {name: 'slug', title: 'Slug', type: 'slug', options: {source: 'name'}},
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {hotspot: true},
+      fields: [{name: 'alt', title: 'Alt', type: 'string'}],
+    },
+    {
+      name: 'sheets',
+      title: 'Sheets',
+      type: 'array',
+      of: [{type: 'sheet'}],
+    },
+    {
+      name: 'notes',
+      title: 'Notes',
+      type: 'array',
+      of: [{type: 'block'}],
+    },
+  ],
+}
+export default student
