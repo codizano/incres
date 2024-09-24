@@ -28,6 +28,8 @@ const student = {
           {title: 'Natalia', value: 'Natalia'},
           {title: 'Samuel', value: 'Samuel'},
           {title: 'Juan Pablo', value: 'Juan_Pablo'},
+          {title: 'Scarlett', value: 'scarlett'},
+          {title: 'Carla', value: 'carla'},
         ],
       },
     },
@@ -44,6 +46,13 @@ const student = {
       title: 'Sheets',
       type: 'array',
       of: [{type: 'sheet'}],
+    },
+    {
+      name: 'increscendo',
+      type: 'boolean',
+      title: '¿Es Parte de Increscendo?',
+      description: 'Indica si la propiedad es verdadera o falsa',
+      default: true,
     },
     {
       name: 'notes',
